@@ -5,9 +5,12 @@ public class Looper : MonoBehaviour {
 
 	int numBGPanels = 6;
 	
-	float pipeMax = 0.8430938f;
+//	float pipeMax = 0.8430938f;
+//	float pipeMin = -0.003243029f;
+
 	float pipeMin = -0.003243029f;
-	
+	float pipeMax = 0.07430938f;
+
 	void Start() {
 		GameObject[] pipes = GameObject.FindGameObjectsWithTag("Pipe");
 		
@@ -26,7 +29,7 @@ public class Looper : MonoBehaviour {
 		
 		Vector3 pos = collider.transform.position;
 		
-		pos.x += widthOfBGObject * numBGPanels;
+		pos.x += widthOfBGObject * numBGPanels - widthOfBGObject/1.5f;
 		
 		if(collider.tag == "Pipe") {
 			pos.y = Random.Range(pipeMin, pipeMax);

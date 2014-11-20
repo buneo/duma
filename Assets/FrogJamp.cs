@@ -13,10 +13,20 @@ public class FrogJamp : MonoBehaviour {
 	void Start () {
 		animator = transform.GetComponentInChildren<Animator> ();
 	}
+
+	void OnDisable(){}
+
+	void OnEnable(){}
 	
 	// Update is called once per frame
 	void Update () {
 		//
+		Vector3 frog = new Vector3();
+		frog = transform.position;
+		if(frog.y <0.2f){
+			OnDisable();
+		}
+
 		if (death)
 						return;
 		if (Input.GetKey (KeyCode.Space)) {
@@ -37,7 +47,8 @@ public class FrogJamp : MonoBehaviour {
 		}
 	}
 
-	void OnCollisionEnter2D(Collision2D collision){
-		animator.SetTrigger("die");
-	}
+//	void OnCollisionEnter2D(Collision2D coll){
+//		Animator animator = transform.GetComponentInChildren<Animator> ();
+//		animator.SetTrigger("die");
+//	}
 }

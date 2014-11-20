@@ -8,8 +8,8 @@ public class Looper : MonoBehaviour {
 //	float pipeMax = 0.8430938f;
 //	float pipeMin = -0.003243029f;
 
-	float pipeMin = -0.003243029f;
-	float pipeMax = 0.07430938f;
+	float pipeMin = -0.2243029f;
+	float pipeMax = 0.7430938f;
 
 	void Start() {
 		GameObject[] pipes = GameObject.FindGameObjectsWithTag("Pipe");

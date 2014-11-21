@@ -30,25 +30,5 @@ public class FrogJamp : MonoBehaviour {
 		if (death)
 						return;
 		if (Input.GetKey (KeyCode.Space)) {
-			forwardSpeed += Time.deltaTime*speed;
-			
-		}
-
-		if(Input.GetKeyUp(KeyCode.Space)){
-			animator.SetTrigger("doJamp");
-			rigidbody2D.AddForce(Vector2.right*forwardSpeed);
-			rigidbody2D.AddForce(Vector2.up*forwardSpeed*2);
-			didFlap = true;
-		}
-
-		if(didFlap == true){
-			forwardSpeed = 50;
-			didFlap = false;
-		}
-	}
-
-//	void OnCollisionEnter2D(Collision2D coll){
-//		Animator animator = transform.GetComponentInChildren<Animator> ();
-//		animator.SetTrigger("die");
-//	}
+			forwardSpeed += Time.deltaTime*speed;a
 }

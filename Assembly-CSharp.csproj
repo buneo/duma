@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{E628B05F-B4A0-39D4-0D21-8CD22EEE3C70}</ProjectGuid>
+	<ProjectGuid>{40661EF0-17AA-F979-768E-A093064D7AA2}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -47,8 +47,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\CameraFollow.cs" />
+     <Compile Include="Assets\CountDown.cs" />
      <Compile Include="Assets\FrogJamp.cs" />
      <Compile Include="Assets\Looper.cs" />
+     <Compile Include="Assets\Score.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
